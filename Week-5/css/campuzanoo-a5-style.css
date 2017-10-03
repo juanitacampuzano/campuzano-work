@@ -1,0 +1,258 @@
+body{
+    font-family: 'Work Sans', sans-serif; 
+    height: 100%;
+    width: 100%;
+    
+}
+
+a{
+    color: inherit;
+    text-decoration: none; 
+}
+
+a:hover{
+    color: lightgray;
+}
+
+a img:hover{
+    opacity: .5;
+}
+
+button:hover{
+/*    opacity: .4;*/
+    background-color: black;
+    color: white;
+}
+
+.menuItem {
+    border-bottom: 1px solid grey;
+    border-right: 20px solid transparent; 
+}
+
+.mediaButton{
+    border-bottom: 1px solid grey;
+    border-right: 1px solid transparent;
+
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-image: url(tulumimg%20copy.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.centerAlign{
+    text-align: center;
+}
+
+.contentItems {
+    border-right: 500px solid transparent;
+}
+
+.circularFrame{
+	border-radius: 50%;
+    display: inline-block;
+    height: 200px;
+    margin-left: 270px;
+    margin-top: 200px;
+    overflow: hidden; 
+    position: absolute;
+    width: 200px;
+}
+
+.circularFrame:hover{
+    opacity: .5;
+}
+
+.circularFrame img{
+    height: 100%;
+    width: auto;
+/*    margin-left: -50px;*/
+}
+
+
+.dontbeshy{
+/*	animation-timing-function: ease-in-out;*/
+    font-size: 50px;
+    font-style: italic;
+    margin-top: 10em;
+	text-align: center;
+}
+
+.btn{
+	background-color: white;
+    border-color: black;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-left: 553px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.homeButton {
+    margin-top: 14em;
+}
+
+.workReturnButtons{
+    background-color: white;
+    border-color: black;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 10px;
+    margin: 3px 1px;
+    margin-left: 553px;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.contactMeTxt {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 650px;
+}
+
+.contactMeTxtt {
+    font-size: 18px;
+    margin-left: 650px;
+}
+
+.contactSend {
+    margin-left: 650px;
+    padding-bottom: 20px;
+}
+
+.contactImg {
+    margin-left: 120px;
+    margin-top: -30em;
+    
+}
+ 
+.sendBtn {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 650px;
+    padding: 3px 6px;
+}
+
+.return{
+    margin-top: 100px;
+    margin-left: -436px;
+}
+
+/*ONE FAMILY*/
+
+#topMenu {
+    background-color: white;
+    height: 25px;
+    opacity: .8;
+    position: fixed; 
+    width: 100%;
+    z-index: 2;
+/*    border-bottom: 1px solid grey;*/ 
+}
+
+#menuButtons {
+    left: 50px;
+    position: absolute;
+    width: 296px;
+}
+
+#socialMedia{
+    bottom: .05px;
+    left: 1120px;
+    position: absolute;
+    width: 80px;
+}
+
+
+
+/*SECOND FAMILY*/
+#logo{
+    background-color: white;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+#logoIcon {
+    height: 50px;
+    left: 620px;
+    position: absolute;
+    width: 87px;
+}
+
+#nameLogo {
+    font-size: 40px;
+    height: 40px;
+    left: 390px;
+    position: absolute;
+    top: 60px;
+    width: 530px;
+}
+
+
+/*PARALLAX*/
+#homeImg{
+    height: 400px;
+    position: absolute;
+    top: 160px;
+    width: 100%;
+}
+
+
+/*THIRD FAMILY*/
+#homeContent {
+    height: 600px;
+    position: absolute;
+    top: 550px;
+    width: 100%;
+}
+
+#textContent {
+    font-size: 40px;
+    height: 100px;
+    left: 550px; 
+    margin-top: 30px;
+    position: absolute;
+    width: 200px;
+}
+
+#contactMeFrame {
+    background-color: black;
+    height: 1000px;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+}
+
+#contactMe {
+    height: 600px;
+    width: auto;
+    color: white;
+}
+
+.textContact {
+    color: white;
+    font-size: 40px;
+    height: 50px;
+    margin-left: 500px;
+    text-align: center;
+    top: 5px;
+    width: 250px;
+}
+
