@@ -1,0 +1,102 @@
+body{
+    background-color: black;
+    font-family: 'Work Sans', sans-serif; 
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+a{
+    color: inherit;
+    text-decoration: none; 
+}
+
+a:hover{
+    color: darkgray;
+}
+
+a img:hover{
+    opacity: .5;
+}
+
+.logo:hover{
+    color: red;
+}
+
+.logo{
+    align-content: center;
+    border-bottom: 1px solid white;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+/*    background-color: white;*/
+    display: block;
+/*    height: 100px;*/
+    margin: 0 auto;
+    padding-bottom: 90px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+.logoIcon {
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+/*    left: 620px;*/
+    position: relative;
+    width: 87px;
+}
+
+.nameLogo {
+    color: white;
+    display: block;
+    font-size: 40px;
+/*    height: 40px;*/
+    margin: 0 auto;
+    /*    left: 390px;*/
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    top:10px;
+/*    width: 530px;*/
+}
+
+
+.links{
+/*    background-color: aqua;*/
+    height: 500px;
+    margin-top: 300px;
+    text-align: center;
+    
+}
+
+.main-nav{
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Work Sans";
+    font-size: 30px;
+    font-weight: lighter;
+    list-style: none;
+/*    margin-right: 43px;*/
+
+}
+
+.nav-links{
+    border-color: gray;
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.weeks:hover{
+    color: red;
+}
+
+
+/*footer*/
+
+
+footer small{
+    float: right;
+    padding: 15px;
+}
