@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8" />
+    <title>Juanita Campuzano Homepage</title>
+    <link rel="stylesheet" href="css/campuzano-a7-style.css" media="all">
+    <link rel="stylesheet" href="css/fotorama.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/fotorama.js"></script>
+</head>
+    
+<body>
+ 
+<!--Top Menu bar - includes: text buttons and social media icons-->
+    <nav class="topMenu">
+        <div class="menuBackground"></div>
+        <ul class="menuButtons">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Creative</a>
+                 <ul class="sub-nav">
+                    <li><a href='graphicdesign.html'>Graphic Design</a></li>
+                    <li><a href='2dart.html'>2D Design</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a>
+                 <ul class="sub-nav">
+                    <li><a href='mystory.html'>My Story</a></li>
+                    <li><a href='resume.html'>Resume</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <ul class="socialMedia">
+            <li><a href="https://soundcloud.com/juanitacamvel" class="mediaButton"><img src='img/soundcloud.svg' alt="sound cloude link" id="soundcloud"></a></li>
+            <li><a href="https://www.linkedin.com/in/juanitacampuzano/" class="mediaButton"><img src='img/linkedinIcon.svg' alt='linkedin link' id="linkedin"></a></li>
+            <li><a href="https://www.instagram.com/juanitacampuzano/" class="mediaButton"><img src='img/instagram-icon%20copy.svg' alt='instagram link' id="instagram"></a></li>
+        </ul>
+    </nav>
+
+
+<!--Logo section - inludes: jcv icon and text for name-->
+    <nav class="logo">
+        <div class="logoIcon">
+            <a href="index.html"><img src="img/logoicon.svg" alt="logo icon"></a>
+        </div>
+        <div class="nameLogo">
+            <a href="index.html">JUANITA CAMPUZANO VELEZ</a>
+        </div>
+    </nav>
+    
+<!--parallax image-->
+    <picture class="homeImg"><source srcset='img/nyc.jpg'><img src='img/nyc.jpg' class="parallax" width="1400" alt="work: San Diego main img"></picture>
+    
+<!--content area - includes: content text, content buttons and name    -->
+    <main class="graphicDesignContent">
+        <div class="fotorama" data-width="80%" data-ratio="1142 /857" data-arrows='true' data-click='true' data-swipe='false'>
+            <img src="img/graphicD/greatGatsbyCover.jpg" alt="Gatsby Cover" data-caption='Great Gatsby Book Cover'>
+                
+                    
+            <img src="img/graphicD/Fahrenheight%20451%20Cover%20%20copy.jpg" alt="Fahrenheight Cover" data-caption='Fahrenheight Book Cover'>
+                    
+                
+            <img src="img/graphicD/Frankenstein%20Title%20Page%20copy%202.jpg" alt="Frankenstein Cover" data-caption='Frankenstein Book Cover'>
+                    
+                    
+            <img src="img/graphicD/lolita%20%20copy.jpg" alt="Lolita Cover" data-caption='Lolita Book Cover'>   
+        </div> 
+			<div class="homeButton">
+                <form method="get" action="index.html">
+                    <button class="workReturnButtons" id="btn1" type="submit">HOME</button>
+                </form>
+                <form method="get" action="work.html">
+                    <button class="workReturnButtons" id="btn2" type="submit">CREATIVE</button>
+                </form>
+            </div>
+         <br>
+         <br>
+
+        <footer><small>&copy;Juanita Campuzano 2017</small></footer>
+
+    </main>
+   
+    
+</body>
+</html>
+  
