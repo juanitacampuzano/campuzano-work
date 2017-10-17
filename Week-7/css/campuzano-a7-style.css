@@ -401,7 +401,9 @@ h6 {
     background-color: black;
     border-bottom-color: white;
     border-bottom-width: thin;
-    border-color: black;
+    border-right-color: black;
+    border-left-color: black;
+    border-top-color: black;
     color: white;
     font-family: "raleway";
     font-size: 12px;
@@ -503,12 +505,20 @@ h6 {
     text-align: center;
 }
 
+.row{
+    max-width: 1000px;
+    margin: 0 auto;
+/*    text-align: center;*/
+}
+
 * {
   box-sizing: border-box;
 }
 
 .row > .column {
   padding: 0 8px;
+    float: none;
+    display: inline-block;
 }
 
 .row:after {
@@ -518,9 +528,10 @@ h6 {
 }
 
 .column {
-  float: left;
+/*  float: left;*/
+    display: inline-block;
     margin-top: 20px;
-  width: 25%;
+    width: 33%;
 }
 
 
@@ -541,7 +552,7 @@ h6 {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+/*  background-color: #fefefe;*/
   margin: auto;
   padding: 0;
   width: 90%;
@@ -567,6 +578,12 @@ h6 {
 
 .mySlides {
   display: none;
+    text-align: center;
+}
+
+.mySlides img {
+    max-height: 80vh;
+
 }
 
 .cursor {
@@ -578,7 +595,7 @@ h6 {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 10%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
