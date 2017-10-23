@@ -882,9 +882,8 @@ footer small{
     
     .nameLogo{
         position: relative;
-        margin-left: 10%;
-        margin-right: 10%;
         text-align: center;
+        font-size: 180%;
     }
     
     .contentFrame {
@@ -915,7 +914,7 @@ footer small{
 /*		position: relative;*/
         position: absolute;
 		padding: 5px;
-/*		background: lightgray;*/
+		background: white;
 		border: 1px solid black;
 		left: 20px;
 		top: 20px;
