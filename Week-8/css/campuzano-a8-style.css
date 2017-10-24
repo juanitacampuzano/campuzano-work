@@ -1193,6 +1193,26 @@ footer small{
 
 @media only screen and (max-width : 768px){
 
+    .homeImg{
+        top: 40px;
+    }
+    
+    .homeContent{
+        top: 500px;
+    }
+    
+    .graphicDesignContent{
+        top: 500px;
+    }
+    
+    .gallery{
+        top: 470px;
+    }
+    
+    .myStoryContent{
+        top: 430px;
+    }
+    
     .nameLogo{
         position: relative;
         text-align: center;
@@ -1324,9 +1344,57 @@ footer small{
     #btn2Black{
         margin-right: 43.5%;
     }
+    
+    .myStoryContent{
+        top: 400px;
+    }
+    
+    .gallery{
+        top: 400px;
+    }
+    
+    .graphicDesignContent{
+        top: 420px;
+    }
 }
 
 @media only screen and (max-width : 550px){
+   
+    .homeImg{
+        top: 50px;
+    }
+    
+    .homeContent{
+        top: 400px;
+    }
+    
+    #surf{
+        top: 380px;
+    }
+    
+    #surf1{
+        top: 60px;
+    }
+    .graphicDesignContent{
+        top: 390px;
+    }
+    
+    .gallery{
+        top: 350px;
+    }
+    
+    #palmT{
+        top: 70px;
+    }
+    
+    .myStoryContent{
+        top: 340px;
+    }
+    
+    .myStoryTxtt{
+        font-size: 100%;
+    }
+    
     .nameLogo{
         font-size: 190%;
     }
@@ -1353,6 +1421,37 @@ footer small{
 }
 
 @media only screen and (max-width : 414px) {
+
+    .homeImg{
+        top: 60px;
+    }
+    
+    .homeContent{
+        top: 320px;
+    }
+    
+    #surf{
+        top: 300px;
+    }
+    
+    #surf1{
+        top: 70px;
+    }
+    .graphicDesignContent{
+        top: 320px;
+    }
+    
+    .gallery{
+        top: 290px;
+    }
+    
+    #palmT{
+        top: 90px;
+    }
+    
+    .myStoryContent{
+        top: 300px;
+    }
     
     img {
         width: 100%;
@@ -1518,7 +1617,7 @@ footer small{
         margin-left: 5%;
         margin-right: 10%;
         width: 90%;
-        font-size: 1.2em;
+        font-size: 1.1em;
         line-height: 1.8em;
     }
 }
@@ -1559,6 +1658,39 @@ footer small{
 
 @media only screen and (max-width : 375px){
 
+    
+    .homeImg{
+        top: 70px;
+    }
+    
+    .homeContent{
+        top: 300px;
+    }
+    
+    #surf{
+        top: 280px;
+    }
+    
+    #surf1{
+        top: 80px;
+    }
+    .graphicDesignContent{
+        top: 300px;
+    }
+    
+    .gallery{
+        top: 280px;
+    }
+    
+    #palmT{
+        top: 90px;
+    }
+    
+    .myStoryContent{
+        top: 280px;
+/*        width: auto;*/
+    }
+    
     img {
         width: 100%;
     }
@@ -1571,6 +1703,7 @@ footer small{
         display: block;
         position: relative;
         text-align: center;
+/*        width: 18%;*/
     }
     
     .nameLogo{
@@ -1722,8 +1855,8 @@ footer small{
     .myStoryTxtt{
         margin-left: 5%;
         margin-right: 10%;
-        width: 80%;
-        font-size: 1.2em;
+        width: auto;
+        font-size: 1em;
         line-height: 1.5em;
     }
 }
