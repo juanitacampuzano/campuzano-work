@@ -144,7 +144,7 @@ h6 {
 }
 
 .menuButtons li a:hover{
-    background-color: #F9F9F9;
+/*    background-color: #F9F9F9;*/
     opacity: .5;
     transition: background-color .5s;
 }
@@ -224,10 +224,11 @@ h6 {
     align-content: center;
     background-color: white;
     display: block;
-    height: 100px;
+/*    height: 100px;*/
     margin: 0 auto;
+    padding: 15px 0;
     position: absolute;
-    top: 50px;
+    top: 35px;
     width: 100%;
 }
 
@@ -258,13 +259,16 @@ h6 {
 
 .homeImg{
     display: block;
-    height: 400px;
-    margin-top: 20px;
+    height: auto;
+    width: auto;
+/*    margin-top: 20px;*/
     overflow: hidden;
-    position: relative;
-    top: 170px;
+    position: fixed;
+    top: 35px;
+    z-index: -1;
 /*    width: 100%;*/
 }
+
 
 .parallax{
     background-attachment: fixed;
@@ -272,12 +276,14 @@ h6 {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 100vh;
+    width: 100%;
 }
 
 /*Home/Work/About --> CONTENT AREA*/
 .homeContent {
-    height: 600px;
+/*    height: 600px;*/
+    background-color: white;
     position: absolute;
     top: 590px;
     width: 100%;
@@ -386,7 +392,7 @@ h6 {
 
 .contactMeFrame {
     background-color: black;
-    height: 970px;
+    height: auto;
     position: absolute;
     top: 190px;
     width: 100%;
@@ -515,7 +521,7 @@ h6 {
 /*----------------- 2D Art Thumbails -------------------*/
 .gallery{
 	background-color: black;
-    height: 2800px; /* The height of the gallery container */
+    height: auto; /* The height of the gallery container */
     position: absolute;
     top: 570px;
     width: 100%;
@@ -699,17 +705,23 @@ img.hover-shadow {
 
 
 .graphicDesignContent {
-    padding-top: 200px;
+    top: 590px;
+    background-color: white;
     text-align: center;
+/*    height: auto;*/
+    width: 100%;
+    position: absolute;
+    
 }
+
 
 /*MY Story section*/
 
 .myStoryContent{
     background-color: black;
-    height: 730px;
-    position: relative;
-    top: 170px;
+    height: auto;
+    position: absolute;
+    top: 590px;
     width: 100%;
 }
 
@@ -814,25 +826,25 @@ img.hover-shadow {
 
 #btn1{
   float: left;
-  margin-left: 560px;
+  margin-left: 42%;
 
 }
 
 #btn2{
   float: right;
-  margin-right: 560px;
+  margin-right: 42%;
 
 }
 
 #btn1Black{
   float: left;
-  margin-left: 555px;
+  margin-left: 42%;
 
 }
 
 #btn2Black{
   float: right;
-  margin-right: 555px;
+  margin-right: 42%;
 
 }
 
@@ -851,8 +863,10 @@ footer small{
 
 /*MEDIA QUIERY*/
 
+
 @media only screen and (max-width : 810px) {
 
+    
     img {
         width: 100%;
     }
@@ -862,12 +876,6 @@ footer small{
     
     }
     
-    #menu-icon {
-		display:inline-block;
-        float: left;
-        margin-left: 30%;
-
-	}
     
     .logoIcon{
         display: block;
@@ -875,11 +883,13 @@ footer small{
         text-align: center;
     }
     
+/*
     .nameLogo{
         position: relative;
         text-align: center;
-        font-size: 180%;
+        font-size: 200%;
     }
+*/
     
     .contentFrame {
         text-align: center;
@@ -893,13 +903,20 @@ footer small{
     }
     .contentItems {
         position: relative;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        width: 100%;
+ 
         
     }
     
     h3 {
         text-align: center;
+        display: block;
+        margin: 0;
+        width: 100%;
+        margin-top: 10px;
     }
     
     .prev {
@@ -920,24 +937,30 @@ footer small{
 		border: 1px solid black;
 		left: 20px;
 		top: 20px;
-		width: 20%;
+		width: 25%;
 		border-radius: 4px 0 4px 4px;
 
 	}
 
+    .menuButtons > li{    
+        font-weight: bolder;
+    }
+    
 	.tryit li {
-
 		text-align: left;
 		width: 100%;
-		padding: 10px 0;
+		padding: 5px 0;
 		margin: 0;
 	}
     
-    .menuButtons .sub-nav, .menuButons:active .sub-nav {
-        float: right;
-        background-color: aqua;
-        
-    }
+
+
+    #menu-icon {
+		display:inline-block;
+        float: left;
+        margin-left: 30%;
+
+	}
 
 	.tryit:hover .menuButtons {
 		display: block;
@@ -945,6 +968,39 @@ footer small{
       
 	}
     
+    .menuButtons .sub-nav{
+        padding-left: 20px;
+    }
+    
+    .menuButtons li .sub-nav li{
+/*        background-color: darkgray;*/
+        padding: 0;
+        transition: 0.2s;
+        transition-delay: 0.5s;
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+    }
+    
+/*
+ .menuButtons li .sub-nav li {   Drop down menu list styling 
+    background-color: white;
+    display: none;
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    
+}
+*/
+
+    .menuButtons li:hover .sub-nav li {
+        padding-bottom: 5px;
+        padding-top: 5px;
+       display: block;
+        max-height: 200px;
+
+    }   
 }
 
 
@@ -1031,15 +1087,17 @@ footer small{
     img {
         width: 100%;
     }
+/*
     .nameLogo{
         position: relative;
         text-align: center;
         font-size: 280%;
     }
+*/
     
     .gallery {
-        height: 205%;
-        max-width: 100%;
+        height: auto;
+        max-width: auto;
     }
     
 
@@ -1056,21 +1114,19 @@ footer small{
     }
     
     #btn1{
-        margin-left: 42%;
-        margin-bottom: 20px;
+        margin-left: 40%;
     }
     
     #btn2{
-        margin-right: 42%;
+        margin-right: 40%;
     }
     
     #btn1Black{
-        margin-left: 42%;
-        margin-bottom: 20px; 
+        margin-left: 40%;
     }
 
     #btn2Black{
-        margin-right: 42%;
+        margin-right: 40%;
     }
     
     .contactImg{
@@ -1081,8 +1137,7 @@ footer small{
     }
     
     .contactMeFrame{
-        height: 2185px;
-        max-width: 100%;
+        height: auto;
     }
 
     .contactMeTxt{
@@ -1116,7 +1171,7 @@ footer small{
     
     
     .myStoryContent{
-        height: 1800px;
+        height: auto;
     }
     
     .myStoryTxt{
@@ -1141,13 +1196,15 @@ footer small{
     .nameLogo{
         position: relative;
         text-align: center;
-        font-size: 250%;
+/*        font-size: 200%;*/
     }
     
+/*
     .gallery {
         height: 290%;
         max-width: 100%;
     }
+*/
     
     .prev {
         left: 0;
@@ -1163,7 +1220,6 @@ footer small{
     
     #btn1{
         margin-left: 40%;
-        margin-bottom: 20px;
     }
     
     #btn2{
@@ -1172,7 +1228,6 @@ footer small{
     
     #btn1Black{
         margin-left: 40%;
-        margin-bottom: 20px; 
     }
 
     #btn2Black{
@@ -1186,10 +1241,12 @@ footer small{
         padding: 20px;  
     }
     
+/*
     .contactMeFrame{
         height: 1900px;
         max-width: 100%;
     }
+*/
 
     .contactMeTxt{
         font-size: 2em;
@@ -1221,9 +1278,11 @@ footer small{
     
 
     
+/*
     .myStoryContent{
         height: 1490px;
     }
+*/
     
     .myStoryTxt{
         font-size: 2em;
@@ -1239,6 +1298,59 @@ footer small{
     }
 }
 
+@media only screen and (max-width : 700px) {
+    
+    
+    .homeButton{
+        text-align: center;
+        width: 100%;
+    }
+    
+    #btn1{
+        margin-left: 46.5%;
+        margin-bottom: 20px;
+
+    }
+    
+    #btn2{ 
+        margin-right: 43.5%;
+    }
+    
+    #btn1Black{
+        margin-left: 46.5%;
+        margin-bottom: 20px; 
+    }
+
+    #btn2Black{
+        margin-right: 43.5%;
+    }
+}
+
+@media only screen and (max-width : 550px){
+    .nameLogo{
+        font-size: 190%;
+    }
+    
+    #btn1{
+        margin-left: 44.5%;
+        margin-bottom: 20px;
+
+    }
+    
+    #btn2{ 
+        margin-right: 43%;
+    }
+    
+    #btn1Black{
+        margin-left: 44.5%;
+        margin-bottom: 20px; 
+    }
+
+    #btn2Black{
+        margin-right: 43%;
+    }
+    
+}
 
 @media only screen and (max-width : 414px) {
     
@@ -1246,11 +1358,6 @@ footer small{
         width: 100%;
     }   
     
-    #menu-icon {
-		display:inline-block;
-        float: left;
-        margin-left: 30%;
-	}
     
     .logo{
         position: absolute;
@@ -1266,28 +1373,6 @@ footer small{
         position: relative;
         text-align: center;
         font-size: 180%;
-    }
-    
-    .circularFrame{
-        text-align: center;
-    }
-    
-    .contentFrame {
-        text-align: center;
-        display: block;
-    }
-    
-    .contentItems {
-        position: relative;
-        text-align: center;
-        margin-left: 5%;
-        margin-right: 50%;
-    }
-    
-    h3 {
-        margin-left: 70%;
-        text-align: center;
-        display: inline-block;
     }
     
     .currentStatus{
@@ -1334,46 +1419,12 @@ footer small{
     }
     
     
-    .tryit .menuButtons, .tryit:active .menuButtons { 
-
-/*		display: hidden;*/
-        display: none;
-/*		position: relative;*/
-        position: absolute;
-		padding: 5px;
-		background: white;
-		border: 1px solid black;
-		left: 20px;
-		top: 20px;
-		width: 20%;
-		border-radius: 4px 0 4px 4px;
-
-	}
-
-	.tryit li {
-
-		text-align: left;
-		width: 100%;
-		padding: 10px 0;
-		margin: 0;
-	}
-    
-    .menuButtons .sub-nav, .menuButons:active .sub-nav {
-        float: right;
-        background-color: aqua;
-        
-    }
-
-	.tryit:hover .menuButtons {
-		display: block;
-/*        background-color: lightgray;*/
-      
-	}
-    
+/*
     .gallery {
         max-height: 270%;
         max-width: 100%;
     }
+*/
     .prev {
         left: 0;
     }
@@ -1401,7 +1452,7 @@ footer small{
     }
 
     #btn2Black{
-        margin-right: 40%;
+        margin-right: 39%;
     }
     
     
@@ -1413,10 +1464,12 @@ footer small{
     }
     
     
+/*
     .contactMeFrame{
         height: 1588px;
         max-width: 100%;
     }
+*/
 
     .contactMeTxt{
         font-size: 2em;
@@ -1450,9 +1503,11 @@ footer small{
         margin-left: 40%;
     }
     
+/*
     .myStoryContent{
         height: 1400px;
     }
+*/
     
     .myStoryTxt{
         font-size: 2em;
@@ -1479,30 +1534,6 @@ footer small{
         font-size: 100%;
     }
 */
-    
-    .contentFrame {
-        text-align: center;
-    }
-    
-    .circularFrame {
-        text-align: center;
-        display: inline-block;
-        
-    }
-
-    .contentItems {
-        position: relative;
-        margin-left: 3%;
-        margin-right: 60%;
-        display: inline-block;
-        
-    }
-    
-    h3 {
-        margin-left: 65%;
-        text-align: center;
-        display: inline-block;
-    }
     
     .dontbeshy{
         font-size: 309%;
@@ -1532,12 +1563,6 @@ footer small{
         width: 100%;
     }
     
-    #menu-icon {
-		display:inline-block;
-        float: left;
-        margin-left: 30%;
-	}
-    
     .logo{
         position: absolute;
     }    
@@ -1554,30 +1579,7 @@ footer small{
         font-size: 165%;
     }
     
-    .contentFrame {
-        text-align: center;
-    }
-    
-    .circularFrame {
-        text-align: center;
-        display: inline-block;
-        
-    }
 
-    .contentItems {
-        position: relative;
-        margin-left: 1%;
-/*        margin-right: 30%;*/
-        display: inline-block;
-        
-    }
-    
-    h3 {
-        margin-left: 70%;
-        text-align: center;
-        display: inline-block;
-    }
-    
     .currentStatus{
         font-size: 110%;
         margin-left: 15%;
@@ -1620,48 +1622,14 @@ footer small{
     .dontbeshy{
         font-size: 250%;
     }
-    
-    
-    .tryit .menuButtons, .tryit:active .menuButtons { 
-
-/*		display: hidden;*/
-        display: none;
-/*		position: relative;*/
-        position: absolute;
-		padding: 5px;
-		background: white;
-		border: 1px solid black;
-		left: 20px;
-		top: 20px;
-		width: 20%;
-		border-radius: 4px 0 4px 4px;
-
-	}
-
-	.tryit li {
-
-		text-align: left;
-		width: 100%;
-		padding: 10px 0;
-		margin: 0;
-	}
-    
-    .menuButtons .sub-nav, .menuButons:active .sub-nav {
-        float: right;
-        background-color: aqua;
         
-    }
-
-	.tryit:hover .menuButtons {
-		display: block;
-/*        background-color: lightgray;*/
-      
-	}
     
+/*
     .gallery {
         max-height: 270%;
         max-width: 100%;
     }
+*/
     .prev {
         left: 0;
     }
@@ -1689,7 +1657,7 @@ footer small{
     }
 
     #btn2Black{
-        margin-right: 39%;
+        margin-right: 38%;
     }
     
     
@@ -1701,10 +1669,12 @@ footer small{
     }
     
     
+/*
     .contactMeFrame{
         height: 1550px;
         max-width: 100%;
     }
+*/
 
     .contactMeTxt{
         font-size: 2em;
@@ -1738,9 +1708,11 @@ footer small{
         margin-left: 40%;
     }
     
+/*
     .myStoryContent{
         height: 1400px;
     }
+*/
     
     .myStoryTxt{
         font-size: 2em;
