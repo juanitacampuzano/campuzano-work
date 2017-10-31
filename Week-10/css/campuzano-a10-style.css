@@ -1,0 +1,1925 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {}
+
+
+
+/*Main*/
+body{
+    font-family: 'Work Sans', sans-serif; 
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+a{
+    color: inherit;
+    text-decoration: none; 
+}
+
+a:hover{
+    color: lightgray;
+}
+
+a img:hover{
+    opacity: .5;
+}
+
+a:hover#menu-icon {
+	opacity: .5;
+
+}
+
+button{
+    border-width: thin;
+    font-family: 'Work Sans', sans-serif; 
+}
+
+button:hover{
+/*    opacity: .4;*/
+    background-color: black;
+    color: white;
+}
+
+
+h3 {
+    font-size: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+u {
+    border-bottom: .5px solid grey;
+    text-decoration: none;
+
+}
+
+h5 {
+    font-family: "raleway";
+    font-size: 30px;   
+    font-style: italic;
+}
+
+h6 {
+    text-align: center
+}
+
+
+/*ALLLL --> Top Menu section*/
+
+.topMenu {
+/*    background-color: white;*/
+/*    border-bottom: .02px solid grey;*/
+/*    height: 30px;*/
+    opacity: .8;
+    padding-bottom: 5px;
+    padding-top: 9px;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 2;
+     
+}
+
+.menuBackground {
+    background-color: white;
+    border-bottom: .03px solid grey;
+    height: 37px;
+    left: 0;
+    position:absolute;
+    top: 0;
+    width: 100%;
+}
+
+.menuButtons {
+    cursor: pointer;
+/*    display: inline-block;*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.tryit{
+    float: left;
+}
+
+
+.menuButtons,
+.sub-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menuButtons li{
+    float: left;
+    font-size: 1em;
+    line-height: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100px;
+}
+
+.menuButtons li a {
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+.menuButtons li a:hover{
+/*    background-color: #F9F9F9;*/
+    opacity: .5;
+    transition: background-color .5s;
+}
+
+
+.menuButtons li .sub-nav li {  /* Drop down menu list styling */
+    background-color: white;
+    display: none;
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    
+}
+
+.menuButtons li:hover .sub-nav li {
+   display: block;
+
+}
+
+#menu-icon {
+	display: hidden;
+	width: 20px;
+	height: 20px;
+	background:  url(../img/menu-icon.svg) center;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    position: relative;
+/*    width: 80px;*/
+
+}
+
+.socialMedia{
+/*    bottom: 8px;*/
+/*    left: 1120px;*/
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    position: relative;
+    width: 80px;
+    
+}
+
+.socialMedia li{
+    display: inline-block;
+}
+
+#soundcloud {
+    width: 24px;
+}
+
+#linkedin {
+    padding-bottom: 7px;
+    padding-left: 5px;
+    width: 20px;
+}
+
+#instagram {
+    padding-bottom: 7px;
+    padding-left: 5px;
+    width: 20px;
+}
+
+
+/*.mediaButton{ - social media*/
+/*    border-bottom: 1px solid grey;*/
+/*    border-right: 1px solid transparent;*/
+
+/*}*/
+
+
+/*ALLLLL ---->Logo Section*/
+
+.logo{
+    align-content: center;
+    background-color: white;
+    display: block;
+/*    height: 100px;*/
+    margin: 0 auto;
+    padding: 15px 0;
+    position: absolute;
+    top: 35px;
+    width: 100%;
+}
+
+.logoIcon {
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+/*    left: 620px;*/
+    position: relative;
+    width: 87px;
+}
+
+.nameLogo {
+    display: block;
+    font-size: 40px;
+/*    height: 40px;*/
+    margin: 0 auto;
+    /*    left: 390px;*/
+    position: relative;
+    text-align: center;
+    top:10px;
+/*    width: 530px;*/
+}
+
+
+/*ALLLLL----> Parallax Section*/
+
+.homeImg{
+    display: block;
+    height: auto;
+    width: auto;
+/*    margin-top: 20px;*/
+    overflow: hidden;
+    position: fixed;
+    top: 35px;
+    z-index: -1;
+/*    width: 100%;*/
+}
+
+
+.parallax{
+    background-attachment: fixed;
+    background-image: url();
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+/*    height: 100vh;*/
+    width: 100%;
+}
+
+/*Home/Work/About --> CONTENT AREA*/
+.homeContent {
+/*    height: 600px;*/
+    background-color: white;
+    position: absolute;
+    top: 590px;
+    width: 100%;
+}
+
+.textContent {
+/*    INSIDE A H1*/
+    display: block;
+    font-size: 40px;
+    font-weight: 100;
+    height: 50px;
+/*    left: 550px; */
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.contentFrame {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+.contentItems {
+    display: inline-block;
+    width: 49%; 
+/*    should work at 50%*/
+}
+
+
+.circularFrame{
+	border-radius: 50%;
+    display: block;
+    height: 300px;
+/*    margin-left: 260px;*/
+    margin: 0 auto;
+    margin-top: 100px;
+    overflow: hidden; 
+/*    position: absolute;*/
+    width: 300px;
+   
+}
+
+.circularFrame:hover{
+    opacity: .5;
+}
+
+.circularFrame img{
+    height: 100%;
+    width: auto;
+/*
+        ^^ do i need this width?
+        ^^ also - next to the about there is weird space when highlighted on the right side
+*/
+    
+/*    margin-left: -50px;*/
+/*        - have to take this off becaue on the about- the family image moves. */
+}
+
+/*HOME --> CONTENT AREA*/
+
+.dontbeshy{
+/*	animation-timing-function: ease-in-out;*/
+/*    INSIDE A H2*/
+    font-size: 50px;
+    font-style: italic;
+    margin-top: 3em;
+	text-align: center;
+    
+}
+
+
+
+
+        /*Home--> "contact me" button*/
+
+.homeContactMeBtn{
+	background-color: white;
+    border-color: black;
+    border-width: medium;
+    color: black;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    margin-top: 50px;
+/*    margin: 4px 2px;*/
+/*    margin-left: 553px;*/
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#aboutImage{
+    height: 380px;
+    margin-left: -18px;
+    margin-top: -50px;
+    width: auto;
+/*    why can't this be an ID??*/
+}
+
+
+
+/*CONTACT --> CONTENT AREA*/
+
+.contactMeFrame {
+    background-color: black;
+    height: auto;
+    position: absolute;
+    top: 190px;
+    width: 100%;
+}
+
+/*
+.textContact {
+    color: white;
+    font-size: 40px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    top: 5px;
+    width: 250px;
+    text-decoration: underline;
+}
+*/
+
+.contactMe {
+    color: white;
+    padding-bottom: 60px;
+    padding-top: 40px;
+    width: auto;
+    
+}
+
+.contactMeTxt {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 650px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+
+.contactMeTxtt {
+    font-size: 18px;
+    margin-left: 650px;
+    padding-bottom: 30px;
+}
+
+.contactSend {
+    margin-left: 650px;
+    padding-bottom: 20px;
+}
+
+.contactbox{
+    background-color: black;
+    border-bottom-color: white;
+    border-bottom-width: thin;
+    border-right-color: black;
+    border-left-color: black;
+    border-top-color: black;
+    color: white;
+    font-family: "raleway";
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.sendBtn {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "raleway";
+    font-size: 15px;
+    padding: 3px 6px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sendBtn:hover {
+/*    opacity: .5;*/
+    background-color: white;
+    color: black;
+}
+
+.contactImg {
+    margin-left: 120px;
+    margin-top: -30em;
+    
+}
+
+.contactPageLogo {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    position: relative;
+    width: 87px;
+}
+
+.contactQuote{
+    color: white;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+
+.contactHomeReturnBtn {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: inline-block;
+    
+}
+
+.contactHomeReturnBtnn {
+    background-color: black;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    padding: 4px 8px;
+}
+
+.contactHomeReturnBtn button:hover{
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+
+/*----------------- 2D Art Thumbails -------------------*/
+.gallery{
+	background-color: black;
+    height: auto; /* The height of the gallery container */
+    position: absolute;
+    top: 570px;
+    width: 100%;
+	
+}
+
+.galleryFrame {
+/*    height: 2600px;*/
+    margin-bottom: 50px;
+}
+
+.text2dArt {
+    /*    INSIDE A H1*/
+    color: white;
+    display: block;
+    font-size: 40px;
+    font-weight: 100;
+    height: 50px;
+/*    left: 550px; */
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.row{
+    max-width: 1000px;
+    margin: 0 auto;
+/*    text-align: center;*/
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+    float: none;
+    display: inline-block;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+/*  float: left;*/
+    display: inline-block;
+    margin-top: 20px;
+    width: 33%;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+/*  background-color: #fefefe;*/
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 40px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+    text-align: center;
+}
+
+.mySlides img {
+    max-height: 80vh;
+
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+/*GRAPHIC DESIGN SECTION*/
+
+
+.graphicDesignContent {
+    top: 590px;
+    background-color: white;
+    text-align: center;
+/*    height: auto;*/
+    width: 100%;
+    position: absolute;
+    
+}
+
+/*
+.fotorama__nav__frame {
+    float: none !important;
+}
+
+.fotorama1509049862927 .fotorama__nav--thumbs .fotorama__nav__frame{
+    display:block !important;
+}
+*/
+
+
+/*MY Story section*/
+
+.myStoryContent{
+    background-color: black;
+    height: auto;
+    position: absolute;
+    top: 590px;
+    width: 100%;
+}
+
+.myStoryFrame {
+    color: white;
+    padding-bottom: 80px;
+    padding-top: 50px;
+    width: auto;
+}
+
+.myStoryTxt {
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 25px;
+    margin-left: 550px;
+}
+
+.myStoryTxt u{
+    border-bottom: 1px solid;
+}
+
+.myStoryTxtt {
+    font-size: 16px;
+    line-height: 28px;
+    margin-left: 550px;
+    width: 40%;
+}
+
+.myStoryImg {
+    margin-left: 120px;
+    margin-top: -50em;
+    
+}
+
+/*resume section*/
+
+.resumeFrame {
+    height: 1000px;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    
+}
+.currentStatus {
+    color: dimgray;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 100;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+}
+
+.resumeTxt {
+    font-family: "raleway";
+    font-size: 70px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.resumeTxt u{
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.resumeContent {
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+.indentResume {
+    line-height: 28px;
+    margin-left: 50px;
+    width: 70%;
+
+}
+
+
+/*ReturnButtons ---> Home and Contact Me*/
+
+.homeButton {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 6em;
+    text-align: center;
+    width: 100%;
+/*    padding-left: 398px;*/
+/*    padding: 8px;*/
+
+}
+
+.workReturnButtons{ 
+    background-color: white;
+    border-color: black;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px 8px;
+    
+}
+
+#btn1{
+/*
+  float: left;
+  margin-left: 42%;
+*/
+
+}
+
+#btn2{
+/*
+  float: right;
+  margin-right: 42%;
+*/
+
+}
+
+#btn1Black{
+/*  float: left;*/
+/*  margin-left: 42%;*/
+
+}
+
+#btn2Black{
+/*  float: right;*/
+/*  margin-right: 42%;*/
+
+}
+
+/*footer*/
+
+
+footer small{
+    float: right;
+    padding: 15px;
+}
+
+.footerColor {
+    color: white;
+}
+
+
+/*MEDIA QUIERY*/
+
+
+@media only screen and (max-width : 810px) {
+
+    
+    img {
+        width: 100%;
+    }
+    
+    .logo{
+        position: absolute;
+    
+    }
+    
+    
+    .logoIcon{
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    
+/*
+    .nameLogo{
+        position: relative;
+        text-align: center;
+        font-size: 200%;
+    }
+*/
+    
+    .contentFrame {
+        text-align: center;
+
+        
+    }
+    
+    .circularFrame {
+        text-align: center;
+        
+    }
+    .contentItems {
+        position: relative;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        width: 100%;
+ 
+        
+    }
+    
+    h3 {
+        text-align: center;
+        display: block;
+        margin: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .prev {
+        left: 0;
+    }
+    
+    .next {
+        right: 0;
+    }
+    .tryit .menuButtons, .tryit:active .menuButtons { 
+
+/*		display: hidden;*/
+        display: none;
+/*		position: relative;*/
+        position: absolute;
+		padding: 5px;
+		background: white;
+		border: 1px solid black;
+		left: 20px;
+		top: 20px;
+		width: 25%;
+		border-radius: 4px 0 4px 4px;
+
+	}
+
+    .menuButtons > li{    
+        font-weight: bolder;
+    }
+    
+	.tryit li {
+		text-align: left;
+		width: 100%;
+		padding: 5px 0;
+		margin: 0;
+	}
+    
+
+
+    #menu-icon {
+		display:inline-block;
+        float: left;
+        margin-left: 30%;
+
+	}
+
+	.tryit:hover .menuButtons {
+		display: block;
+/*        background-color: lightgray;*/
+      
+	}
+    
+    .menuButtons .sub-nav{
+        padding-left: 20px;
+    }
+    
+    .menuButtons li .sub-nav li{
+/*        background-color: darkgray;*/
+        padding: 0;
+        transition: 0.2s;
+        transition-delay: 0.5s;
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+    }
+    
+/*
+ .menuButtons li .sub-nav li {   Drop down menu list styling 
+    background-color: white;
+    display: none;
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    
+}
+*/
+
+    .menuButtons li:hover .sub-nav li {
+        padding-bottom: 5px;
+        padding-top: 5px;
+       display: block;
+        max-height: 200px;
+
+    }   
+}
+
+
+/*
+@media only screen and (max-width : 1281px){
+
+    .prev {
+        left: 0;
+    }
+    
+    .next {
+        right: 0;
+    }
+
+    .contactImg{
+        margin: 80px auto 40px;
+        max-width: 100%;
+        position: relative;
+        padding: 20px;  
+    }
+    
+    .contactMeFrame{
+        height: 2185px;
+        max-width: 100%;
+    }
+
+    .contactMeTxt{
+        font-size: 3em;
+        margin-left: 5%;
+    }
+    
+    .contactMeTxtt{
+        margin-left: 5%;
+        margin-right: 10%;
+        width: 90%;
+        line-height: 2em;
+        padding-top: 20px;
+        font-size: 1.4em;     
+    }
+    
+    
+    .contactSend{
+        margin-left: 5%;
+        margin-right: 10%;
+        width: 70%;      
+        margin-top: 20px;
+    }
+    
+    .myStoryImg{
+        max-width: 50px;
+
+    }
+    
+    
+    .myStoryContent{
+        height: 730px;
+        position: relative;
+        top: 170px;
+        width: 100%;
+    }
+    
+    .myStoryTxt {
+        font-size: 30px;
+        font-weight: 100;
+        margin-bottom: 25px;
+        margin-left: 550px;
+    }
+
+    .myStoryTxt u{
+        border-bottom: 1px solid;
+    }
+    
+    .myStoryTxtt{
+        font-size: 16px;
+        line-height: 28px;
+        margin-left: 550px;
+        width: 40%;
+    }
+}
+*/
+
+@media only screen and (max-width : 1024px){
+
+    img {
+        width: 100%;
+    }
+/*
+    .nameLogo{
+        position: relative;
+        text-align: center;
+        font-size: 280%;
+    }
+*/
+    
+    .gallery {
+/*        height: auto;*/
+/*        width: 100%;*/
+/*        position: absolute;*/
+/*        display: block;*/
+        
+    }
+    
+    .gallery img{
+        width: auto;
+        height: auto;
+        
+    }
+
+    .prev {
+        left: 0;
+    }
+    
+    .next {
+        right: 0;
+    }
+    
+    .galleryFrame{
+        text-align: center;
+    }
+    
+/*
+    #btn1{
+        margin-left: 40%;
+    }
+    
+    #btn2{
+        margin-right: 40%;
+    }
+    
+    #btn1Black{
+        margin-left: 40%;
+    }
+
+    #btn2Black{
+        margin-right: 40%;
+    }
+*/
+    
+    .contactImg{
+        margin: 80px auto 40px;
+        max-width: 1024px;
+        position: relative;
+        padding: 20px;  
+    }
+    
+    .contactMeFrame{
+        height: auto;
+    }
+
+    .contactMeTxt{
+        font-size: 3em;
+        margin-left: 5%;
+    }
+    
+    .contactMeTxtt{
+        margin-left: 5%;
+        margin-right: 10%;
+        width: 90%;
+        line-height: 2em;
+        padding-top: 20px;
+        font-size: 1.4em;     
+    }
+    
+    
+    .contactSend{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 70%;      
+        margin-top: 20px;
+    }
+    
+    .myStoryImg{
+        margin: 80px auto 40px;
+        max-width: 1024px;
+        position: relative;
+        padding: 20px;
+    }
+    
+    
+    .myStoryContent{
+        height: auto;
+    }
+    
+    .myStoryTxt{
+        font-size: 3em;
+        margin-left: 5%;
+    }
+    
+    .myStoryTxtt{
+        margin-left: 5%;
+        margin-right: 10%;
+        width: 90%;
+        line-height: 2em;
+        padding-top: 20px;
+        font-size: 1.4em;
+    }
+}
+
+
+
+@media only screen and (max-width : 768px){
+
+    .homeImg{
+        top: 40px;
+    }
+    
+    .homeContent{
+        top: 500px;
+    }
+    
+    .graphicDesignContent{
+        top: 500px;
+    }
+    
+    .gallery{
+        top: 470px;
+    }
+    
+    .myStoryContent{
+        top: 430px;
+    }
+    
+    .nameLogo{
+        position: relative;
+        text-align: center;
+/*        font-size: 200%;*/
+    }
+    
+/*
+    .gallery {
+        height: 290%;
+        max-width: 100%;
+    }
+*/
+  
+    .gallery img{
+        width: 90%;
+    }
+    .prev {
+        left: 0;
+    }
+    
+    .next {
+        right: 0;
+    }
+    
+    .galleryFrame{
+        text-align: center;
+    }
+    
+    .homeButton{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .contactHomeReturnBtn{
+        text-align: center;
+        width: 100%;
+    }
+    
+    #btn1{
+/*        display: block;*/
+/*        margin-left: 40%;*/
+    }
+    
+    #btn2{
+/*        display: block;*/
+/*        margin-right: 40%;*/
+    }
+    
+    #btn1Black{
+/*        margin-left: 40%;*/
+    }
+
+    #btn2Black{
+/*        margin-right: 40%;*/
+    }
+    
+    .contactImg{
+        margin: 80px auto 40px;
+        max-width: 768px;
+        position: relative;
+        padding: 20px;  
+    }
+    
+/*
+    .contactMeFrame{
+        height: 1900px;
+        max-width: 100%;
+    }
+*/
+
+    .contactMeTxt{
+        font-size: 2em;
+        margin-left: 5%;
+    }
+    
+    .contactMeTxtt{
+        margin-left: 5%;
+        margin-right: 10%;
+        width: 90%;  
+        font-size: 1.2em;
+        line-height: 1.8em;
+    }
+    
+    
+    .contactSend{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 70%;      
+        margin-top: 20px;
+    }
+    
+    .myStoryImg{
+        margin: 80px auto 40px;
+        max-width: 768px;
+        position: relative;
+        padding: 20px;
+    }
+    
+
+    
+/*
+    .myStoryContent{
+        height: 1490px;
+    }
+*/
+    
+    .myStoryTxt{
+        font-size: 2em;
+        margin-left: 5%;
+    }
+    
+    .myStoryTxtt{
+        margin-left: 5%;
+        margin-right: 10%;
+        width: 90%;
+        font-size: 1.2em;
+        line-height: 1.8em;
+    }
+}
+
+@media only screen and (max-width : 700px) {
+    
+    
+    .homeButton{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .contactHomeReturnBtn {
+        text-align: center;
+        width: 100%;
+    }
+    #btn1{
+/*        display: block;*/
+
+    }
+    
+    #btn2{ 
+/*        display: block;*/
+/*        margin: auto;*/
+    }
+    
+    #btn1Black{
+/*        display: block;*/
+/*
+        margin-left: 46.5%;
+        margin-bottom: 20px; 
+*/
+    }
+
+    #btn2Black{
+/*        display: block;*/
+        /*        margin-right: 43.5%;*/
+
+    }
+
+    
+    .myStoryContent{
+        top: 400px;
+    }
+    
+    .gallery{
+        top: 400px;
+    }
+    
+    .graphicDesignContent{
+        top: 420px;
+    }
+}
+
+@media only screen and (max-width : 550px){
+   
+    .homeImg{
+        top: 50px;
+    }
+    
+    .homeContent{
+        top: 400px;
+    }
+    
+    #surf{
+        top: 380px;
+    }
+    
+    #surf1{
+        top: 60px;
+    }
+    .graphicDesignContent{
+        top: 390px;
+    }
+    
+    .gallery{
+        top: 350px;
+    }
+    
+    #palmT{
+        top: 70px;
+    }
+    
+    .myStoryContent{
+        top: 340px;
+    }
+    
+    .myStoryTxtt{
+        font-size: 100%;
+    }
+    
+    .nameLogo{
+        font-size: 190%;
+    }
+    
+/*
+    #btn1{
+        margin-left: 44.5%;
+        margin-bottom: 20px;
+
+    }
+    
+    #btn2{ 
+        margin-right: 43%;
+    }
+    
+    #btn1Black{
+        margin-left: 44.5%;
+        margin-bottom: 20px; 
+    }
+
+    #btn2Black{
+        margin-right: 43%;
+    }
+    
+*/
+}
+
+@media only screen and (max-width : 414px) {
+
+    .homeImg{
+        top: 60px;
+    }
+    
+    .homeContent{
+        top: 320px;
+    }
+    
+    #surf{
+        top: 300px;
+    }
+    
+    #surf1{
+        top: 70px;
+    }
+    .graphicDesignContent{
+        top: 320px;
+    }
+    
+    .gallery{
+        top: 290px;
+    }
+    
+    #palmT{
+        top: 90px;
+    }
+    
+    .myStoryContent{
+        top: 300px;
+    }
+    
+    img {
+        width: 100%;
+    }   
+    
+    
+    .logo{
+        position: absolute;
+    }    
+    
+    .logoIcon{
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    
+    .nameLogo{
+        position: relative;
+        text-align: center;
+        font-size: 180%;
+    }
+    
+    .currentStatus{
+        font-size: 110%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    .resumeTxt{
+        font-size: 200%;
+        text-align: center;
+    }
+    
+    .resumeTxt u{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .resumeContent{
+        text-align: left;
+        left: 0;
+        margin-left: 30px;
+        
+    }
+    
+    h5{
+        font-size: 100%;
+    }
+    
+    .indentResume{
+        font-size: 87%;
+    }
+    
+    strong {
+        font-size: 88%;
+    }
+
+    small{
+        font-size: 88%;
+    }
+
+    .dontbeshy{
+        font-size: 250%;
+    }
+    
+    
+/*
+    .gallery {
+        max-height: 270%;
+        max-width: 100%;
+    }
+*/
+    .prev {
+        left: 0;
+    }
+    
+    .next {
+        right: 0;
+    }
+    
+    .galleryFrame{
+        text-align: center;
+    }
+    
+/*
+    #btn1{
+        margin-left: 45%;
+        margin-bottom: 20px;
+    }
+    
+    #btn2{
+        margin-right: 39%;
+    }
+    
+    #btn1Black{
+        margin-left: 44%;
+        margin-bottom: 20px; 
+    }
+
+    #btn2Black{
+        margin-right: 39%;
+    }
+*/
+    
+    
+    .contactImg{
+        margin: 80px auto 40px;
+        max-width: 414px;
+        position: relative;
+        padding: 20px;  
+    }
+    
+    
+/*
+    .contactMeFrame{
+        height: 1588px;
+        max-width: 100%;
+    }
+*/
+
+    .contactMeTxt{
+        font-size: 2em;
+        margin-left: 5%;
+    }
+    
+    .contactMeTxtt{
+        margin-left: 5%;
+        margin-right: 10%;
+        width: 90%; 
+        font-size: 1.2em;
+        line-height: 1.8em;
+    }
+    
+    
+    .contactSend{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 70%;      
+        margin-top: 20px;
+    }
+    
+    .myStoryImg{
+        margin: 80px auto 40px;
+        max-width: 414px;
+        position: relative;
+        padding: 20px;
+    }
+    
+    .contactPageLogo{
+        margin-left: 40%;
+    }
+    
+/*
+    .myStoryContent{
+        height: 1400px;
+    }
+*/
+    
+    .myStoryTxt{
+        font-size: 2em;
+        margin-left: 5%;
+    }
+    
+    .myStoryTxtt{
+        margin-left: 5%;
+        margin-right: 10%;
+        width: 90%;
+        font-size: 1.1em;
+        line-height: 1.8em;
+    }
+}
+
+
+@media only screen and (max-width : 400px){
+
+/*
+    
+    .nameLogo{
+        position: relative;
+        text-align: center;
+        font-size: 100%;
+    }
+*/
+    
+    .dontbeshy{
+        font-size: 309%;
+    }
+    
+/*
+    .workReturnButtons{
+        position: relative;
+        margin-left: 15%;
+        margin-right: 15%;
+        display: inline-block;
+    }
+*/
+    
+/*
+    #btn1{
+        margin-left: 43%;
+        margin-bottom: 20px;
+    }
+    
+    #btn2{
+        margin-right: 40%;
+    }
+*/
+}
+
+
+@media only screen and (max-width : 375px){
+
+    
+    .homeImg{
+        top: 70px;
+    }
+    
+    .homeContent{
+        top: 300px;
+    }
+    
+    #surf{
+        top: 280px;
+    }
+    
+    #surf1{
+        top: 80px;
+    }
+    .graphicDesignContent{
+        top: 300px;
+    }
+    
+    .gallery{
+        top: 280px;
+    }
+    
+    #palmT{
+        top: 90px;
+    }
+    
+    .myStoryContent{
+        top: 280px;
+/*        width: auto;*/
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    .logo{
+        position: absolute;
+    }    
+    
+    .logoIcon{
+        display: block;
+        position: relative;
+        text-align: center;
+/*        width: 18%;*/
+    }
+    
+    .nameLogo{
+        position: relative;
+        text-align: center;
+        font-size: 165%;
+    }
+    
+
+    .currentStatus{
+        font-size: 110%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    .resumeTxt{
+        font-size: 200%;
+        text-align: center;
+    }
+    
+    .resumeTxt u{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .resumeContent{
+        text-align: left;
+        left: 0;
+        margin-left: 30px;
+        
+    }
+    
+    h5{
+        font-size: 100%;
+    }
+    
+    .indentResume{
+        font-size: 87%;
+    }
+    
+    strong {
+        font-size: 88%;
+    }
+
+    small{
+        font-size: 88%;
+    }
+
+    .dontbeshy{
+        font-size: 250%;
+    }
+        
+    
+/*
+    .gallery {
+        max-height: 270%;
+        max-width: 100%;
+    }
+*/
+    .prev {
+        left: 0;
+    }
+    
+    .next {
+        right: 0;
+    }
+    
+    .galleryFrame{
+        text-align: center;
+    }
+    
+/*
+    #btn1{
+        margin-left: 43%;
+        margin-bottom: 20px;
+    }
+    
+    #btn2{
+        margin-right: 39%;
+    }
+    
+    #btn1Black{
+        margin-left: 43%;
+        margin-bottom: 20px; 
+    }
+
+    #btn2Black{
+        margin-right: 38%;
+    }
+*/
+    
+    
+    .contactImg{
+        margin: 80px auto 40px;
+        max-width: 375px;
+        position: relative;
+        padding: 20px;
+    }
+    
+    
+/*
+    .contactMeFrame{
+        height: 1550px;
+        max-width: 100%;
+    }
+*/
+
+    .contactMeTxt{
+        font-size: 2em;
+        margin-left: 5%;
+    }
+    
+    .contactMeTxtt{
+        margin-left: 5%;
+        margin-right: 10%;
+        width: 80%;   
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+    
+    
+    .contactSend{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 70%;      
+        margin-top: 20px;
+    }
+    
+    .myStoryImg{
+        margin: 80px auto 40px;
+        max-width: 375px;
+        position: relative;
+        padding: 20px;
+    }
+    
+    .contactPageLogo{
+        margin-left: 40%;
+    }
+    
+/*
+    .myStoryContent{
+        height: 1400px;
+    }
+*/
+    
+    .myStoryTxt{
+        font-size: 2em;
+        margin-left: 5%;
+    }
+    
+    .myStoryTxtt{
+        margin-left: 5%;
+        margin-right: 10%;
+        width: auto;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+}
