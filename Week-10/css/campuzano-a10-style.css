@@ -259,33 +259,189 @@ h6 {
 
 .homeImg{
     display: block;
-    height: auto;
-    width: auto;
+/*    height: 80vh;*/
 /*    margin-top: 20px;*/
     overflow: hidden;
     position: fixed;
     top: 35px;
     z-index: -1;
-/*    width: 100%;*/
+    width: 100%;
 }
+
 
 
 .parallax{
-    background-attachment: fixed;
-    background-image: url();
+
+/*    background-attachment: fixed;*/
+    background-image: url(../img/TulumImg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-/*    height: 100vh;*/
+    height: 80vh;
     width: 100%;
+    
 }
+
+#surf1 .parallax{
+    background-image: url(../img/SanDiego%20copy.JPG);
+    background-position: center center;
+}
+
+#isla .parallax{
+    background-image: url(../img/keys%20copy.jpg);
+/*    background-position: center center;*/
+    height: 88vh;
+    background-position: center top;
+}
+
+#palmT .parallax{
+    background-image: url(../img/SdPalmtrees.jpg);
+    background-position: center center;
+}
+
+#rainbowRoom .parallax{
+    background-image: url(../img/nyc.jpg);
+    background-position: center center;
+    height: 88vh;
+}
+
+#centralPark .parallax{
+    background-image: url(../img/centralParkk.jpg);
+    height: 88vh;
+    background-position: center center;  
+}
+
+#whiteBox{
+    background-color: white;
+    width: 350px;
+    height: 290px;
+    top: 220px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    /* display: inline-block; */
+    align-content: center;
+    color: black;  
+}
+
+
+
+#level{
+    padding-top: 40px;
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+#graphicDesign{
+    padding-top: 60px;
+    font-size: 40px;
+}
+
+#graphicDesign1{
+    padding-top: 15px;
+    font-size: 40px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.overlay:before{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1000;
+    background-color: rgba(0,0,0,200);
+    opacity: .3;
+}
+
+
+
+
+.article * {
+    position: relative;
+    /* hack */
+}
+
+.quote{
+    position: absolute;
+    top: 328px;
+    left: 30px;
+    color: white;
+/*    font-weight: 900;*/
+    font-size: x-large;
+/*    font-family: 'Oleo Script', cursive;*/
+    font-family: 'Petit Formal Script', cursive;
+    letter-spacing: 1px;
+    
+}
+
+.quote1{
+    position: absolute;
+    top: 328px;
+    left: 30px;
+    color: white;
+/*    font-weight: 900;*/
+    font-size: x-large;
+/*    font-family: 'Oleo Script', cursive;*/
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    
+}
+
+.quote2{
+    position: relative;
+    top: 350px;
+/*    left: 30px;*/
+    color: white;
+/*    font-weight: 900;*/
+    font-size: large;
+    text-align: center;
+/*    font-family: 'Oleo Script', cursive;*/
+    font-family: 'Old Standard TT', serif;
+    letter-spacing: 1px;
+    
+}
+
+#artist{
+    font-family: 'Raleway:200'; 
+    letter-spacing: 1px;
+/*    font-weight: 100;*/
+}
+
+#bienvenidos{
+    font-weight: 100;
+    font-size: medium;
+    letter-spacing: .5px;
+}
+
+#welcome{
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+
+#birthday{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
 
 /*Home/Work/About --> CONTENT AREA*/
 .homeContent {
 /*    height: 600px;*/
     background-color: white;
     position: absolute;
-    top: 590px;
+    top: 577px;
     width: 100%;
 }
 
@@ -352,10 +508,14 @@ h6 {
     font-style: italic;
     margin-top: 3em;
 	text-align: center;
+    opacity: 0;
+    transition: 3s;
     
 }
 
-
+.dontbeshy.visible{
+    opacity: 1;
+}
 
 
         /*Home--> "contact me" button*/
@@ -376,6 +536,12 @@ h6 {
     padding: 12px 30px;
     text-align: center;
     text-decoration: none;
+    transform: scale(0.25);
+    transition: 1s;
+}
+
+.homeContactMeBtn.bigger{
+    transform: scale(1);
 }
 
 #aboutImage{
@@ -475,7 +641,7 @@ h6 {
 
 .contactImg {
     margin-left: 120px;
-    margin-top: -30em;
+    margin-top: -4000px;
     
 }
 
@@ -734,7 +900,7 @@ img.hover-shadow {
     background-color: black;
     height: auto;
     position: absolute;
-    top: 590px;
+    top: 578px;
     width: 100%;
 }
 
@@ -879,11 +1045,63 @@ footer small{
 }
 
 
-/*MEDIA QUIERY*/
+/*MEDIA QUIERY **************************************/
 
 
-@media only screen and (max-width : 810px) {
-
+@media only screen and (max-width : 810px) { 
+    .parallax{
+        background-position: 7% 0%;
+        height: 70vh;
+    }
+    
+    .quote {
+        position: absolute;
+        top: 298px;
+        font-size: larger;
+        left: 40px;
+    }
+    
+    .quote1 {
+        position: absolute;
+        top: 298px;
+        font-size: larger;
+        left: 40px;
+    }
+    
+    .quote2{
+        top: 298px;
+        font-size: small;
+    }
+    
+    .graphicDesignContent{
+        top: 490px;
+    }
+    
+    #whiteBox{
+        width: 300px;
+        height: 200px;
+        top: 220px; 
+    }
+    
+    #level{
+        padding-top: 25px; 
+    }
+    
+    #graphicDesign{
+        padding-top: 35px;
+        font-size: 35px;
+    }
+    
+    #graphicDesign1{
+        font-size: 35px; 
+    }
+    
+    .myStoryContent{
+        top: 468px;
+    }
+    .homeContent{
+        top: 510px;
+    }
     
     img {
         width: 100%;
@@ -911,8 +1129,41 @@ footer small{
     
     .contentFrame {
         text-align: center;
-
         
+    }
+    
+    .blackBox{
+        height: 250px;
+        background-color: black;
+        width: 300px;
+        margin: 0 auto;
+        display: block;
+        
+    }
+    
+    .titleWrapper{
+        color: white;
+        margin-top: 50px;
+        padding-top: 60px;
+        font-size: 50px;
+        text-align: left;
+        padding-left: 30px;
+        overflow: hidden;
+/*        transform: translateX(-240px);*/
+/*        transition: 1s;*/
+    }
+    
+    .workTxt {
+/*        transform: translateX(-240px);*/
+        transition: 1s;
+    }
+    
+    .workTxt.appear{
+        transform: translateX(1);
+    }
+    
+    .titleWrapper:hover{
+        opacity: .5;
     }
     
     .circularFrame {
@@ -1102,6 +1353,12 @@ footer small{
 
 @media only screen and (max-width : 1024px){
 
+    .parallax{
+        background-position: 19% 0%;
+/*        height: 56vh;        */
+    }
+
+    
     img {
         width: 100%;
     }
@@ -1198,9 +1455,11 @@ footer small{
     }
     
     
+/*
     .myStoryContent{
         height: auto;
     }
+*/
     
     .myStoryTxt{
         font-size: 3em;
@@ -1221,24 +1480,65 @@ footer small{
 
 @media only screen and (max-width : 768px){
 
+/*
     .homeImg{
         top: 40px;
     }
+*/
+    .parallax {
+        background-position: 7% 0%;
+        height: 67vh;
+    }   
+    
+    #palmT .parallax{
+        background-position: 51% 0%;
+        height: 67vh;
+    }
+    
+    #rainbowRoom .parallax{
+        height: 67vh;
+    }
+    
+    #centralPark .parallax{
+        height: 67vh;
+    }
     
     .homeContent{
-        top: 500px;
+        top: 490px;
     }
     
     .graphicDesignContent{
-        top: 500px;
+        top: 490px;
     }
     
+    #rainbowRoom .parallax{
+        height: 77vh;
+    }
+    
+    #whiteBox{
+        width: 300px;
+        height: 200px;
+        top: 220px; 
+    }
+    
+    #level{
+        padding-top: 25px; 
+    }
+    
+    #graphicDesign{
+        padding-top: 35px;
+        font-size: 35px;
+    }
+    
+    #graphicDesign1{
+        font-size: 35px; 
+    }
     .gallery{
-        top: 470px;
+        top: 490px;
     }
     
     .myStoryContent{
-        top: 430px;
+        top: 490px;
     }
     
     .nameLogo{
@@ -1398,29 +1698,87 @@ footer small{
     }
 
     
+/*
     .myStoryContent{
         top: 400px;
     }
     
+*/
+/*
     .gallery{
         top: 400px;
     }
+*/
     
+/*
     .graphicDesignContent{
         top: 420px;
     }
+*/
 }
 
 @media only screen and (max-width : 550px){
    
+/*
     .homeImg{
         top: 50px;
     }
-    
-    .homeContent{
-        top: 400px;
+*/
+    .parallax {
+        background-position: 7% 0%;
+        height: 78vh;
     }
     
+/*
+    #palmT .parallax {
+        background-position: 51% 0%;
+        height: 46vh;
+    }
+*/
+    .homeContent{
+        top: 432px;
+    }
+    
+    .quote {
+        top: 260px;
+        font-size: medium;
+    }
+
+    .quote1{
+        top: 260px;
+    }
+    
+    .quote2{
+        top: 240px;
+        font-size: 10px;
+    }
+    
+    #palmT .parallax {
+        background-position: 51% 0%;
+/*        height: 32vh;*/
+        height: 50vh;
+    }
+    
+    #bienvenidos{
+        font-weight: 100;
+        font-size: small;
+        letter-spacing: .5px;
+    }   
+
+    #welcome{
+        font-size: 35px;
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
+
+
+    #birthday{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 100;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+/*
     #surf{
         top: 380px;
     }
@@ -1428,20 +1786,49 @@ footer small{
     #surf1{
         top: 60px;
     }
+*/
     .graphicDesignContent{
-        top: 390px;
+        top: 432px;
+    }
+    
+    #centralPark .parallax{
+        height: 59vh;
+    }
+    #rainbowRoom .parallax{
+        height: 94vh;
+    }
+    
+    #whiteBox{
+        width: 279px;
+        height: 170px;
+        top: 212px;
+    }
+    
+    #level{
+        padding-top: 15px; 
+    }
+    
+    #graphicDesign{
+        padding-top: 28px;
+        font-size: 32px;
+    }
+    
+    #graphicDesign1{
+        font-size: 32px; 
     }
     
     .gallery{
-        top: 350px;
+        top: 432px;
     }
     
+/*
     #palmT{
         top: 70px;
     }
+*/
     
     .myStoryContent{
-        top: 340px;
+        top: 373px;
     }
     
     .myStoryTxtt{
@@ -1477,35 +1864,114 @@ footer small{
 
 @media only screen and (max-width : 414px) {
 
+/*
     .homeImg{
         top: 60px;
     }
+*/
+    .parallax {
+        background-position: 7% 0%;
+        height: 65vh;
+    }
     
     .homeContent{
-        top: 320px;
+        top: 365px;
     }
     
-    #surf{
-        top: 300px;
+    #surf1 .parallax{
+        background-position: 74% 0%;
+        height: 49vh;
     }
     
+    #isla .parallax{
+        height: 75vh;
+        background-position: center top;
+}
+    
+    .quote2{
+        top: 209px;
+        font-size: 8px;
+    }
+    
+    #palmT .parallax {
+        background-position: 51% 0%;
+        height: 48vh;
+    }
+    
+    .quote {
+        top: 230px;
+        font-size: small;
+        left: 20px;
+    }
+
+    .quote1{
+        top: 217px;
+        left: 20px;
+    }
+    
+    #bienvenidos{
+        font-weight: 100;
+        font-size: small;
+        letter-spacing: .5px;
+    }   
+
+    #welcome{
+        font-size: 30px;
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
+
+
+    #birthday{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 100;
+        letter-spacing: 1px;
+        font-size: 15px;
+    }
+/*
     #surf1{
         top: 70px;
     }
+*/
     .graphicDesignContent{
-        top: 320px;
+        top: 365px;
+    }
+    
+    #rainbowRoom .parallax{
+        height: 76vh;
+    }
+    
+    #whiteBox{
+        width: 249px;
+        height: 140px;
+        top: 194px;
+    }
+    
+    #level{
+        padding-top: 10px; 
+    }
+    
+    #graphicDesign{
+        padding-top: 19px;
+        font-size: 28px;
+    }
+    
+    #graphicDesign1{
+        font-size: 28px; 
     }
     
     .gallery{
-        top: 290px;
+        top: 351px;
     }
     
+/*
     #palmT{
         top: 90px;
     }
+*/
     
     .myStoryContent{
-        top: 300px;
+        top: 351px;
     }
     
     img {
@@ -1720,14 +2186,25 @@ footer small{
 @media only screen and (max-width : 375px){
 
     
+/*
     .homeImg{
         top: 70px;
     }
-    
-    .homeContent{
-        top: 300px;
+*/
+    .parallax {
+        background-position: 19% 0%;
+        height: 63vh;
     }
     
+    .homeContent{
+        top: 361px;
+    }
+    
+    .quote2{
+        top: 222px;
+        font-size: 7px;
+    }
+/*
     #surf{
         top: 280px;
     }
@@ -1735,21 +2212,23 @@ footer small{
     #surf1{
         top: 80px;
     }
+*/
     .graphicDesignContent{
-        top: 300px;
+        top: 361px;
     }
     
     .gallery{
-        top: 280px;
+        top: 361px;
     }
     
+/*
     #palmT{
         top: 90px;
     }
+*/
     
     .myStoryContent{
-        top: 280px;
-/*        width: auto;*/
+        top: 342px;
     }
     
     img {

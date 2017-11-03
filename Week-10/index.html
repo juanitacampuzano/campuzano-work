@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
+    <script src="js/jquery-3.1.1.js"></script>
     <script src="js/dontbeshy.js"></script>
 </head>
     
@@ -63,7 +64,7 @@
     </nav>
     
 <!--parallax image-->
-    <picture class="homeImg"><source srcset='img/TulumImg.jpg'><img src='img/TulumImg.jpg' class="parallax" alt="home: Tulum main img"></picture>
+    <div class="homeImg"><div class="parallax"> </div></div> 
     
 <!--content area - includes: content text, content buttons and name    -->
     <main class="homeContent">
@@ -96,19 +97,8 @@
         </nav>
         <footer><small>&copy;Juanita Campuzano 2017</small></footer>
     </main>
-<!--
-<script>
-
-$(window).scroll(function() {
-    var bdyheight = $("html").offset().top;
-    if (bdyheight <= "-630") {
-        $("#2 .dontbeshy, #2 .dontbeshy h3").animate({
-            opacity : 1.0
-        }, 700);
-    }
-}); 
-</script>
--->
+    
+    
 </body>
 </html>
   
