@@ -499,6 +499,50 @@ h6 {
 /*        - have to take this off becaue on the about- the family image moves. */
 }
 
+.contentFramee {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.blackBox{
+    height: 250px;
+    background-color: black;
+    width: 300px;
+    margin: 0 auto;
+/*        display: block;*/
+    display: inline-block;
+    margin: 20px;
+    margin-top: 90px;
+        
+}
+    
+.titleWrapper{
+    color: white;
+    padding-top: 60px;
+    font-size: 50px;
+    text-align: left;
+    padding-left: 30px;
+    overflow: hidden;
+
+/*        transform: translateX(-240px);*/
+/*        transition: 1s;*/
+}
+    
+.workTxt {
+    transform: translateX(-240px);
+    transition: 1s;
+}
+
+.workTxt.appear{
+    transform: none;
+}
+
+.titleWrapper:hover{
+    opacity: .5;
+}
+
 /*HOME --> CONTENT AREA*/
 
 .dontbeshy{
@@ -1130,40 +1174,6 @@ footer small{
     .contentFrame {
         text-align: center;
         
-    }
-    
-    .blackBox{
-        height: 250px;
-        background-color: black;
-        width: 300px;
-        margin: 0 auto;
-        display: block;
-        
-    }
-    
-    .titleWrapper{
-        color: white;
-        margin-top: 50px;
-        padding-top: 60px;
-        font-size: 50px;
-        text-align: left;
-        padding-left: 30px;
-        overflow: hidden;
-/*        transform: translateX(-240px);*/
-/*        transition: 1s;*/
-    }
-    
-    .workTxt {
-/*        transform: translateX(-240px);*/
-        transition: 1s;
-    }
-    
-    .workTxt.appear{
-        transform: translateX(1);
-    }
-    
-    .titleWrapper:hover{
-        opacity: .5;
     }
     
     .circularFrame {

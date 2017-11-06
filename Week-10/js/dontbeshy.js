@@ -9,7 +9,7 @@ $(window).resize(function(){
 
 $(document).ready(function(){
     dbsheight = $('.dontbeshy').offset().top
-//    console.log(dbsheight)
+    console.log(dbsheight)
 })
 
 
