@@ -531,7 +531,7 @@ h6 {
 }
     
 .workTxt {
-    transform: translateX(-240px);
+/*    transform: translateX(-240px);*/
     transition: 1s;
 }
 
