@@ -1,0 +1,359 @@
+<!doctype html>
+
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Juanita Campuzano Homepage</title>
+    <link rel="stylesheet" href="css/campuzano-a11-style.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!--    <script src="js/main.js"></script>-->
+</head>
+    
+<body>
+ 
+<!--Top Menu bar - includes: text buttons and social media icons-->
+    <nav class="topMenu">
+        
+        <div class="menuBackground"></div>
+        
+        <nav class="tryit">
+            <a href="#" id="menu-icon"></a>
+            
+            <ul class="menuButtons">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Creative</a>
+                     <ul class="sub-nav">
+                        <li><a href='graphicdesign.html' class="creativeWidth">Graphic Design</a></li>
+                        <li><a href='2dart.html' class="creativeWidth">2D Design</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a>
+                     <ul class="sub-nav">
+                        <li><a href='mystory.html'>My Story</a></li>
+                        <li><a href='resume.html'>Resume</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        
+        
+    
+        <ul class="socialMedia">
+            <li><a href="https://soundcloud.com/juanitacamvel" class="mediaButton"><img src='img/soundcloud.svg' alt="sound cloude link" id="soundcloud"></a></li>
+            <li><a href="https://www.linkedin.com/in/juanitacampuzano/" class="mediaButton"><img src='img/linkedinIcon.svg' alt='linkedin link' id="linkedin"></a></li>
+            <li><a href="https://www.instagram.com/juanitacampuzano/" class="mediaButton"><img src='img/instagram-icon%20copy.svg' alt='instagram link' id="instagram"></a></li>
+        </ul>
+    </nav>
+
+
+<!--Logo section - inludes: jcv icon and text for name-->
+    <nav class="logo">
+        <div class="logoIcon">
+            <a href="index.html"><img src="img/logoicon.svg" alt="logo icon"></a>
+        </div>
+        <div class="nameLogo">
+            <a href="index.html">JUANITA CAMPUZANO VELEZ</a>
+        </div>
+    </nav>
+    
+<!--parallax image-->
+    <div class="homeImg" id="centralPark">
+            <div class="parallax"></div>
+    </div> 
+    
+<!--content area - includes: content text, content buttons and name    -->
+ 	<main class="gallery">
+        <section class="galleryFrame">
+            <h1 class="text2dArt">2D ART</h1>
+            <div class="row">
+              <div class="column">
+                <img src="img/2D/BikeRim.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="Bike Rim">
+              </div>
+              <div class="column">
+                <img src="img/2D/eyes.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" alt="Hidden Eyes">
+              </div>
+              <div class="column">
+                <img src="img/2D/headlight.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" alt="Audi Headlight">
+              </div>
+             <div class="column">
+                <img src="img/2D/fashion.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" alt="fashion statement">
+            </div>                   
+              <div class="column">
+                <img src="img/2D/lipCollage.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" alt="Magazine collage with red lips">
+              </div>
+               <div class="column">
+                <img src="img/2D/tearDrop.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" alt="half face with teardrop">
+              </div>
+              <div class="column">
+                <img src="img/2D/lips.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" alt="NYC Lips">
+              </div>  
+              <div class="column">
+                <img src="img/2D/cup.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor" alt="cup reflected">
+              </div>                                       
+              <div class="column">
+                <img src="img/2D/ballerina.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor" alt="ballerina">
+              </div>
+              <div class="column">
+                <img src="img/2D/heels.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" alt="heels and gun">
+              </div>
+              <div class="column">
+                <img src="img/2D/newspaper.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor" alt="digital newspaper with hidden face">
+              </div>
+              <div class="column">
+                <img src="img/2D/momPortrait.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor" alt="portrait of mom">
+              </div> 
+              <div class="column">
+                <img src="img/2D/tobiPortrait.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor" alt="tobi">
+              </div>
+              <div class="column">
+                <img src="img/2D/body.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor" alt="abs with collage">
+              </div> 
+               <div class="column">
+                <img src="img/2D/me.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor" alt="scraps made into self-portrait">
+              </div>    
+              <div class="column">
+                <img src="img/2D/redLips.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor" alt="Lips with paintbrush">
+              </div> 
+            </div>
+
+            
+            
+            
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 16</div>
+                  <img src="img/2dArt/BikeRim.jpg" alt="Bike rim">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 16</div>
+                  <img src="img/2dArt/eyes.JPG" alt="hidden eyes">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 16</div>
+                  <img src="img/2dArt/headlight.jpg"  alt="audi headlight">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 16</div>
+                  <img src="img/2dArt/fashion.JPG"  alt="fashion statement">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">5 / 16</div>
+                  <img src="img/2dArt/lipsCollage.jpg" alt="magazine lips">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">6 / 16</div>
+                  <img src="img/2dArt/teardrop.JPG" alt="tear drop, hidden face">
+                </div>
+                  
+                 <div class="mySlides">
+                  <div class="numbertext">7 / 16</div>
+                  <img src="img/2dArt/lipsNYC.jpg" alt="lips nyc">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">8 / 16</div>
+                  <img src="img/2dArt/cup.jpg" alt="cup reflected">
+                </div>         
+                  
+                <div class="mySlides">
+                  <div class="numbertext">9 / 16</div>
+                  <img src="img/2dArt/ballerina.JPG" alt="ballerina">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">10 / 16</div>
+                  <img src="img/2dArt/Heels.JPG" alt="heels and gun">
+                </div>
+                  
+                 <div class="mySlides">
+                  <div class="numbertext">11 / 16</div>
+                  <img src="img/2dArt/newspaper.png" alt="newspaper">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">12 / 16</div>
+                  <img src="img/2dArt/momPortrait.png" alt="Mom Portrait">
+                </div>
+                  
+                 <div class="mySlides">
+                  <div class="numbertext">13 / 16</div>
+                  <img src="img/2dArt/tobi.jpg" alt="Tobi portrait">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">14 / 16</div>
+                  <img src="img/2dArt/body.JPG" alt="Abs">
+                </div>
+                  
+                 <div class="mySlides">
+                  <div class="numbertext">15 / 16</div>
+                  <img src="img/2dArt/me.jpg" alt="Self-portrait made from scraps">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">16 / 16</div>
+                  <img src="img/2dArt/redLips.JPG" alt="Red Lips with a paint brush">
+                </div>                  
+                  
+                  
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+            <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="img/2D/BikeRim.jpg" style="width:100%" onclick="currentSlide(1)" alt="Bike Rim - Medium: Charcoal">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img/2D/eyes.jpg" style="width:100%" onclick="currentSlide(2)" alt="Hidden Eyes - Medium: Graphite and Collage">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img/2D/headlight.jpg" style="width:100%" onclick="currentSlide(3)" alt="Audi Headlight - Medium: Acrylic">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img/2D/fashion.jpg" style="width:100%" onclick="currentSlide(4)" alt="Fashion Statment- Medium: Acrylics with print">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img/2D/lipCollage.jpg" style="width:100%" onclick="currentSlide(5)" alt="Magazine collage of red lips">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img/2D/tearDrop.jpg" style="width:100%" onclick="currentSlide(6)" alt="Half face tear drop - Medium: Oil">
+                </div>
+                 <div class="column">
+                  <img class="demo cursor" src="img/2D/lips.jpg" style="width:100%" onclick="currentSlide(7)" alt="Mac lips with digital footprint of NYC">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img/2D/cup.jpg" style="width:100%" onclick="currentSlide(8)" alt="Reflected Cup - Medium: Graphite">
+                </div>   
+                <div class="column">
+                  <img class="demo cursor" src="img/2D/ballerina.jpg" style="width:100%" onclick="currentSlide(9)" alt="Ballerina - Medium: Paste">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img/2D/heels.jpg" style="width:100%" onclick="currentSlide(10)" alt="Heels x Gun - Medium: Watercolor">
+                </div>
+                 <div class="column">
+                  <img class="demo cursor" src="img/2D/newspaper.jpg" style="width:100%" onclick="currentSlide(11)" alt="Lost by the news - Medium: Digital">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img/2D/momPortrait.jpg" style="width:100%" onclick="currentSlide(12)" alt="Potrait of mother - Medium: Charcoal">
+                </div>     
+                 <div class="column">
+                  <img class="demo cursor" src="img/2D/tobiPortrait.jpg" style="width:100%" onclick="currentSlide(13)" alt="Tobi Portrait - Medium: Scratch paste">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img/2D/body.jpg" style="width:100%" onclick="currentSlide(14)" alt="Abbs - Medium: Graphite x collage">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img/2D/me.jpg" style="width:100%" onclick="currentSlide(15)" alt="Self portrait - Medium: scraps">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img/2D/redLips.jpg" style="width:100%" onclick="currentSlide(16)" alt="Red Lips - Medium: Acrylics">
+                </div> 
+            </div>
+              </div>
+            </div>
+        </section>
+        
+                <div class="contactPageLogo"><img src='img/JCVlogo.svg' alt='contact page - logo'></div>
+            
+            <p class="contactQuote">"Stay tuned, more to come..."</p>
+            
+        
+<!--
+			<div class="contactHomeReturnBtn">
+                <form method="get" action="index.html">
+                    <button class="contactHomeReturnBtnn" id="btn1Black" type="submit">HOME</button>
+                </form>
+                <form method="get" action="work.html">
+                    <button class="contactHomeReturnBtnn" id="btn2Black" type="submit">CREATIVE</button>
+                </form>
+            </div>
+-->
+        
+			<div class="contactHomeReturnBtn">
+                <a href="index.html">
+                    <button class="contactHomeReturnBtnn" id="btn1Black" type="submit">HOME</button>
+                </a>
+                <a href="work.html">
+                    <button class="contactHomeReturnBtnn" id="btn2Black" type="submit">CREATIVE</button>
+                </a>
+            </div>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+        <footer class="footerColor"><small>&copy;Juanita Campuzano 2017</small></footer>
+        
+    </main>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+$(document).keydown(function(event) {
+    if(event.which == 39) {
+        plusSlides(1)
+    } else if(event.which == 37) {
+        plusSlides(-1)
+    }
+})
+</script>
+    
+</body>
+</html>
+  

@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*Main*/
+body{
+    font-family: 'Work Sans', sans-serif; 
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+a{
+    color: inherit;
+    text-decoration: none; 
+}
+
+a:hover{
+    color: lightgray;
+}
+
+a img:hover{
+    opacity: .5;
+}
+
+a:hover#menu-icon {
+	opacity: .5;
+
+}
+
+button{
+    border-width: thin;
+    font-family: 'Work Sans', sans-serif; 
+}
+
+button:hover{
+/*    opacity: .4;*/
+    background-color: black;
+    color: white;
+}
+
+
+u {
+    border-bottom: .5px solid grey;
+    text-decoration: none;
+
+}
+
+
+/*ALLLL --> Top Menu section*/
+
+.topMenu {
+/*    background-color: white;*/
+/*    border-bottom: .02px solid grey;*/
+/*    height: 30px;*/
+    opacity: .8;
+    padding-bottom: 5px;
+    padding-top: 9px;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 2;
+     
+}
+
+.menuBackground {
+    background-color: white;
+    border-bottom: .03px solid grey;
+    height: 37px;
+    left: 0;
+    position:absolute;
+    top: 0;
+    width: 100%;
+}
+
+.menuButtons {
+    cursor: pointer;
+/*    display: inline-block;*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.tryit{
+    float: left;
+}
+
+
+.menuButtons,
+.sub-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menuButtons li{
+    float: left;
+    font-size: 1em;
+    line-height: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100px;
+}
+
+.menuButtons li a {
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+.menuButtons li a:hover{
+/*    background-color: #F9F9F9;*/
+    opacity: .5;
+    transition: background-color .5s;
+}
+
+
+.menuButtons li .sub-nav li {  /* Drop down menu list styling */
+    background-color: white;
+    display: none;
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    
+}
+
+.menuButtons li:hover .sub-nav li {
+   display: block;
+
+}
+
+#menu-icon {
+	display: hidden;
+	width: 20px;
+	height: 20px;
+	background:  url(../img/menu-icon.svg) center;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    position: relative;
+/*    width: 80px;*/
+
+}
+
+
+/*ALLLLL ---->Logo Section*/
+
+.logo{
+    align-content: center;
+    background-color: white;
+    display: block;
+/*    height: 100px;*/
+    margin: 0 auto;
+    padding: 15px 0;
+    position: absolute;
+    top: 35px;
+    width: 100%;
+}
+
+.logoIcon {
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+/*    left: 620px;*/
+    position: relative;
+    width: 87px;
+}
+
+.nameLogo {
+    display: block;
+    font-size: 40px;
+/*    height: 40px;*/
+    margin: 0 auto;
+    /*    left: 390px;*/
+    position: relative;
+    text-align: center;
+    top:10px;
+/*    width: 530px;*/
+}
+
+
+
+/* content area for home */
+
+main {
+    height: auto;
+    width: 100%;
+    top: 200px;
+    position: absolute;
+    border-top: 2px solid black;
+    
+}
+
+h1{
+    text-align: center;
+    top: 100px;
+    
+}
+
+.homeTitle {
+    padding: 50px;
+}
+
+.frame {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.indentResume {
+    line-height: 28px;
+    margin-left: 50px;
+    width: 70%;
+
+}
+
+.indentResumee{
+    line-height: 25px;
+    margin-left: 90px;
+    width: 70%;
+}
+
+.exampleOne {
+    line-height: 28px;
+    margin-left: 50px;
+    width: 70%; 
+}
+
+/*footer*/
+
+
+footer small{
+    float: right;
+    padding: 15px;
+}
+
+.footerColor {
+    color: white;
+}
+
+/* Return */
+.homeButton {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 6em;
+    text-align: center;
+    width: 100%;
+/*    padding-left: 398px;*/
+/*    padding: 8px;*/
+
+}
+
+.workReturnButtons{ 
+    background-color: white;
+    border-color: black;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px 8px;
+    
+}
+
+img {
+    width: auto;
+}
