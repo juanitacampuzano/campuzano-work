@@ -152,15 +152,40 @@ margin: 0 auto; }
     *zoom: 1
 }
 .fotorama__nav-wrap{
-    width: 80px;
+    width: 82px;
     position: absolute;
     display: inline-block;
     left: 0;
-    top: 30px;
+    /* top: 30px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 593px;
 }
 .fotorama__active.fotorama__nav__frame--thumb {
-    border:3px solid pink;
+    background-color: rgba(0,0,0,0);
+    cursor: default;
+    opacity: 1;   
 }
+
+.fotorama__active.fotorama__nav__frame--thumb .fotorama__loaded--img{
+     border: 1px solid grey;
+}
+
+.fotorama__nav__frame--thumb:hover {
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    opacity: 1;   
+}
+
+.fotorama__nav__frame--thumb .fotorama__loaded--img:hover{
+     border: 1px solid grey;
+}
+
+.fotorama__nav__frame--thumb{
+    opacity: 0.6;
+}
+
 .fotorama__thumb-border{
     display:none;
 }

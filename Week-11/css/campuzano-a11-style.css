@@ -502,7 +502,7 @@ h6 {
 .contentFramee {
     display: block;
     margin: 0 auto;
-    width: 80%;
+/*    width: 80%;*/
     text-align: center;
 }
 
@@ -525,13 +525,11 @@ h6 {
     text-align: left;
     padding-left: 30px;
     overflow: hidden;
-
-/*        transform: translateX(-240px);*/
-/*        transition: 1s;*/
+    transition: 1s;
 }
     
 .workTxt {
-/*    transform: translateX(-240px);*/
+    transform: translateX(-240px);
     transition: 1s;
 }
 
@@ -695,6 +693,7 @@ h6 {
     padding-bottom: 15px;
     position: relative;
     width: 87px;
+    padding-top: 100px;
 }
 
 .contactQuote{
@@ -746,6 +745,7 @@ h6 {
     margin-bottom: 50px;
 }
 
+
 .text2dArt {
     /*    INSIDE A H1*/
     color: white;
@@ -790,6 +790,12 @@ h6 {
     width: 33%;
 }
 
+.widthh{
+    width: 25%;
+/*    padding-top: 30px;*/
+    /* padding-bottom: 240px; */
+    margin-bottom: 80px;
+}
 
 /* The Modal (background) */
 .modal {
@@ -864,10 +870,18 @@ h6 {
   -webkit-user-select: none;
 }
 
+.ui .prev,.ui .next{
+    top: 40%;
+}
+
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+
+.prev{
+    left: 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -910,7 +924,7 @@ img.hover-shadow {
 }
 
 .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  box-shadow: 0 4px 8px 0 rgba(255, 249, 249, 0.2), 0 6px 20px 0 rgba(255, 249, 249, 0.19)
 }
 
 
@@ -919,12 +933,152 @@ img.hover-shadow {
 
 .graphicDesignContent {
     top: 590px;
-    background-color: white;
+    background-color: black;
     text-align: center;
 /*    height: auto;*/
     width: 100%;
     position: absolute;
     
+}
+#building1{
+    height: 361px;
+/*    width: 270px;;*/
+    position: relative;
+}
+
+#building2{
+    height: 361px;
+/*    width: 270px;;*/
+    position: relative;
+}
+
+#building3{
+    height: 361px;
+/*    width: 270px;;*/
+    position: relative;
+}
+
+#building1:hover .overlayyy{
+    opacity: 1; 
+}
+#building2:hover .overlayyy{
+    opacity: 1; 
+}
+#building3:hover .overlayyy{
+    opacity: 1; 
+}
+
+.overlayyy {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 21px;
+    right: 0; 
+    height: 100%;
+    width: 270px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255, 255, 255, 0.79);
+    pointer-events: none;
+}
+
+.overlayy {
+position: absolute;
+top: 0;
+bottom: 0;
+ left: 56px; 
+/* right: 0; */
+height: 100%;
+width: 189px;
+opacity: 0;
+transition: .5s ease;
+background-color: rgba(255, 255, 255, 0.79);
+    pointer-events: none;
+}
+
+#uber:hover .overlayy {
+  opacity: 1;
+}
+
+.overlay1 {
+position: absolute;
+top: 0;
+bottom: 0;
+ left: 111px; 
+/* right: 0; */
+height: 100%;
+width: 79px;
+opacity: 0;
+transition: .5s ease;
+background-color: rgba(255, 255, 255, 0.79);
+    pointer-events: none;
+}
+
+.hide-me{
+    display: none;
+}
+
+#education:hover .overlay1 {
+  opacity: 1;
+}
+
+.overlay2 {
+position: absolute;
+top: 0;
+bottom: 0;
+ left: 75px; 
+/* right: 0; */
+height: 100%;
+width: 151.02px;
+opacity: 0;
+transition: .5s ease;
+background-color: rgba(255, 255, 255, 0.79);
+    pointer-events: none;
+}
+
+#enviroment:hover .overlay2 {
+  opacity: 1;
+}
+
+
+.text {
+color: black;
+font-weight: 600;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+}
+
+.textt {
+color: black;
+font-weight: 600;
+font-size: 14px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+}
+
+
+#uber{
+    width: 301px;
+    height: 755px;
+    position: relative;
+}
+
+#enviroment{
+    width: 301px;
+    height: 755px;
+    position: relative;
+}
+#education{
+    width: 301px;
+    height: 755px;
+    position: relative;
 }
 
 /*
@@ -936,6 +1090,7 @@ img.hover-shadow {
     display:block !important;
 }
 */
+
 
 
 /*MY Story section*/
