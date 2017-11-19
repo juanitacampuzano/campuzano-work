@@ -1,0 +1,49 @@
+
+.page-wrapper {
+    background-color: black;
+    min-height: 20em;
+    padding-bottom: 6em;
+    padding-top: 6em;
+    width: 100%;
+}
+
+.car {
+    animation: car 8s infinite reverse;
+    animation-timing-function: linear;
+    background: url('../img/car.jpg');
+    height: 219px; /* height */
+    transform: translateX(30px) translateY(158px) scaleX(1) scaleY(1);
+    width: 90%;
+
+}
+
+@keyframes car {
+    
+    0% {background-position: 0;}
+    
+    100% {background-position: -1000px;}
+}
+
+.circle {
+    background: lightskyblue;
+    border-radius: 54%;
+    height: 34em;
+    margin: 0 auto;
+    max-width: 35em;
+}
+
+
+@media only screen and (max-width : 810px) {
+    .circle {
+        position: relative;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        width: 100%;
+}
+    
+    .car{
+        widows: 50%;
+    }
+}
+
