@@ -10,7 +10,7 @@
 .car {
     animation: car 8s infinite reverse;
     animation-timing-function: linear;
-    background: url('../img/car.jpg');
+    background: url('../img/car.png');
     height: 219px; /* height */
     transform: translateX(0px) translateY(158px) scaleX(1) scaleY(1);
     width: 100%;
