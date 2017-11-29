@@ -12,8 +12,8 @@
     animation-timing-function: linear;
     background: url('../img/car.jpg');
     height: 219px; /* height */
-    transform: translateX(30px) translateY(158px) scaleX(1) scaleY(1);
-    width: 90%;
+    transform: translateX(0px) translateY(158px) scaleX(1) scaleY(1);
+    width: 100%;
 
 }
 
@@ -25,11 +25,12 @@
 }
 
 .circle {
-    background: lightskyblue;
+    background: #70d0f6;
     border-radius: 54%;
     height: 34em;
     margin: 0 auto;
     max-width: 35em;
+    overflow: hidden;
 }
 
 
