@@ -834,3 +834,25 @@ margin: 0 auto; }
 .fotorama__wrap--no-shadows .fotorama__stage:before {
     display: none
 }
+
+
+
+
+@media only screen and (max-width : 550px){
+    
+.fotorama__nav-wrap{
+    width: 44px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 289px;
+}
+
+    .fotorama_img{
+        height: 30px;
+    }
+
+    

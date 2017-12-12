@@ -1523,6 +1523,9 @@ footer small{
 
 @media only screen and (max-width : 1024px){
 
+    .overlayyy {
+        left: 0px;
+    }
     .parallax{
         background-position: 19% 0%;
 /*        height: 56vh;        */
@@ -1649,12 +1652,23 @@ footer small{
 
 
 @media only screen and (max-width : 768px){
-
+    .widthh{
+        width: 33%;
+    }
+    
+    .overlayyy {
+        left: 0px;
+    }
 /*
     .homeImg{
         top: 40px;
     }
 */
+    .mySlides img {
+        max-height: 79vh;
+        max-width: 29%;
+    }
+    
     .parallax {
         background-position: 7% 0%;
         height: 67vh;
@@ -1888,7 +1902,24 @@ footer small{
 }
 
 @media only screen and (max-width : 550px){
-   
+   .widthh {
+    width: 55%;
+    /* padding-top: 30px; */
+    /* padding-bottom: 240px; */
+    margin-bottom: 80px;
+    }
+    
+    .overlayyy {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    height: 100%;
+    width: 208px;
+    }
+    
+    
 /*
     .homeImg{
         top: 50px;
@@ -2034,6 +2065,10 @@ footer small{
 
 @media only screen and (max-width : 414px) {
 
+    .overlayyy{
+        width: 227.69px;
+    }
+    
 /*
     .homeImg{
         top: 60px;
